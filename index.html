@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <style>
+      .row {
+        padding: 100px;
+      }
+      #input {
+        margin-top: 10px;
+      }
+      .label {
+        cursor: pointer;
+      }
+      .warning::placeholder {
+        color: red;
+      }
+    </style>
+    <title>Todo App</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+        <form action="" method="POST" role="form">
+          <legend>Form Todos</legend>
+          <div class="form-group">
+            <label for="">Todo</label>
+            <input
+              type="text"
+              class="form-control"
+              id="actions"
+              placeholder="Nhập hành động"
+            />
+            <select
+              style="margin-top: 20px"
+              name=""
+              id="select"
+              class="form-control"
+              required="required"
+            >
+              <option value="on">Bật</option>
+              <option value="off">Tắt</option>
+            </select>
+          </div>
+          <button type="submit" id="add" class="btn btn-primary">
+            Thêm hành động
+          </button>
+        </form>
+      </div>
+      <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Hành Động</th>
+              <th>Trạng Thái</th>
+              <th>Sửa/Xóa</th>
+            </tr>
+          </thead>
+          <tbody id="content"></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script src="./todoApp.js"></script>
+</html>

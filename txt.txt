@@ -1,0 +1,11 @@
+FE  ===================> html -> css -> javascript -> react -> material
+BE ====================> nodejs -> express || nestjs 
+DB ====================> nosql(mongo) sql(mysql)
+
+javascript 
+method string
+method array
+promise
+async await
+
+
