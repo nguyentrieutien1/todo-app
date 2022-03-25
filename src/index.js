@@ -3,6 +3,8 @@ const app = express();
 const todoModel = require("./model/todo");
 const mongoose = require("mongoose");
 const cors = require("cors");
+require("dotenv").config();
+const port = process.env.PORT;
 app.use(cors());
 try {
   mongoose.connect(
@@ -53,6 +55,6 @@ app.delete("/todo/delete/:id", async (req, res) => {
     console.log(error);
   }
 });
-app.listen(8000, () => {
-  console.log(`App listeing on link http://localhost:${8000}`);
+app.listen(port, () => {
+  console.log(`App listeing on link http://localhost:${port}`);
 });
