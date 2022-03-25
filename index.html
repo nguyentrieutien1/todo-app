@@ -61,7 +61,7 @@
   </body>
   <script>
     function getData() {
-      fetch("http://localhost:8000/todo/get")
+      fetch("https://todo-appxxx.herokuapp.com/todo/get")
         .then((res) => {
           return res.json();
         })
@@ -85,7 +85,7 @@
           const deleteAll = document.querySelectorAll(".delete");
           deleteAll.forEach((button) => {
             button.onclick = () => {
-              fetch(`http://localhost:8000/todo/delete/${button.id}`, {
+              fetch(`https://todo-appxxx.herokuapp.com/${button.id}`, {
                 method: "DELETE",
               })
                 .then((res) => res.json())
