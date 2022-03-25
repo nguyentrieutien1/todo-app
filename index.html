@@ -106,7 +106,7 @@
     submitButton.onclick = () => {
       let valueInput = document.querySelector("input").value;
       const valueSelect = document.querySelector("select").value;
-      fetch("http://localhost:8000/todo/create", {
+      fetch("https://todo-appxxx.herokuapp.com/todo/create", {
         body: JSON.stringify({ task: valueInput, status: valueSelect }),
         method: "POST", // *GET, POST, PUT, DELETE, etc.
         mode: "cors", // no-cors, *cors, same-origin
